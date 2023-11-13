@@ -1,0 +1,46 @@
+GET http://localhost:3001
+
+###
+
+POST http://localhost:3001/data 
+Content-Type: application/json
+
+
+{
+    "id":4,
+    "name":"smd",
+    "Qualification":"B.tech",
+    "Email":"smd@signupbc.com" 
+   
+}
+
+
+
+
+####
+POST http://localhost:3001/ListOfData
+Content-Type: application/json
+
+[
+
+{
+    "id":5,
+    "name":"messi",
+    "Qualification":"B.tech",
+    "Email":"messi@signupbc.com" 
+   
+},
+
+{
+    "id":6,
+    "name":"shaik",
+    "Qualification":"B.tech",
+    "Email":"shaik@signupbc.com" 
+   
+}
+
+]
+
+###
+
+DELETE http://localhost:3001/ListOfData/6
